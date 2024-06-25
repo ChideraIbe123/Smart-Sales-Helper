@@ -3,6 +3,7 @@ import viteLogo from '/vite.svg'
 
 import Hero from "./components/Hero"
 import GlobeMap from './components/GlobeMap'
+import TikTokLogin from './components/LoginButton'
 
 
 import './App.css'
