@@ -1,11 +1,18 @@
 // src/Header.js
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 
 const Header = () => {
-  const handleUploadClick = () => {
-    // Implement your upload video logic here
-    alert("Upload Video clicked!");
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    // Implement your search logic here
+    alert(`Searching for: ${searchQuery}`);
   };
 
   return (
@@ -14,9 +21,18 @@ const Header = () => {
         <h3>Dashboard</h3>
         <p>Welcome to the Tik Tok Trend Analysis Tool Dashboard</p>
       </div>
-      <button className="upload-button" onClick={handleUploadClick}>
-        Upload Video
-      </button>
+      <form className="search-form" onSubmit={handleSearchSubmit}>
+        <input
+          type="text"
+          className="search-input"
+          placeholder="Search videos..."
+          value={searchQuery}
+          onChange={handleSearchChange}
+        />
+        <button type="submit" className="search-button">
+          Search
+        </button>
+      </form>
     </header>
   );
 };
