@@ -66,3 +66,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+#tiktok-login-btn-container {
+  width: 200px;
+  height: 50px;
+  background-color: red; /* Temporary to ensure visibility */
+}

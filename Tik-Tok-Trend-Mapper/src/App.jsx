@@ -11,9 +11,11 @@ const App = () => {
   
   return (
     <div>
+     <div>
+      <h1> Welcome to the app</h1>
+      <TikTokLogin />
+     </div>
      
-     <Hero></Hero>
-     <GlobeMap></GlobeMap>
      
     </div>
     
