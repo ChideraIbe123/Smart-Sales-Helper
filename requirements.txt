@@ -1,4 +1,0 @@
-three
-framer-motion
-vanta
-@googlemaps/js-api-loader
