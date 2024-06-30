@@ -7,7 +7,7 @@ const Home = () => {
     const { products } = useSelector((state) => state);
     const dispatch = useDispatch();
     useEffect(() => {
-      dispatch(fetchAllProducts("https://dummyjson.com/products"));
+      dispatch(fetchAllProducts('https://dummyjson.com/products?limit=0&skip=0'));
     }, [dispatch]);
     return (
         <>
