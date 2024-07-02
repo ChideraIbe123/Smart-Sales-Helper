@@ -1,0 +1,45 @@
+.product_card {
+  background-color: inherit;
+  box-shadow: var(--card-shadow);
+  padding-top: 1rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.product_card img {
+  width: 50%;
+  max-width: 200px;
+}
+
+.rating,
+.title,
+.price {
+  margin: 10px 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.accepted {
+  background-color: green;
+  border-color: green;
+  color: #fff;
+}
+
+.btn.rejected {
+  background-color: red;
+  border-color: red;
+  color: #fff;
+}
