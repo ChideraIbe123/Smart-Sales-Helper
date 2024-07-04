@@ -9,6 +9,22 @@
   top: 0;
 }
 
+/* src/components/Header.css */
+.add-purchase-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #5c817c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.add-purchase-button {
+  background-color: #3e5d4a;
+}
+
 .header-container {
   display: flex;
   flex-direction: column;
