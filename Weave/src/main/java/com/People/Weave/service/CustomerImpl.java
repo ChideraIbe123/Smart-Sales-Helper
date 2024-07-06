@@ -38,22 +38,22 @@ public class CustomerImpl implements CustomerService{
         Customer currentDB = customerRepository.findById(customerId).get();
 
         currentDB.setCustomerEmail(currentDB.getCustomerEmail());
-        if (Objects.nonNull(customer.getCustomerFirstName())
-                && !"".equalsIgnoreCase(
-                customer.getCustomerFirstName())
-                && !currentDB.getCustomerFirstName().equalsIgnoreCase(
-                customer.getCustomerFirstName())) {
-            currentDB.setCustomerFirstName(
-                    customer.getCustomerFirstName());
-        }
-        if (Objects.nonNull(customer.getCustomerLastName())
-                && !"".equalsIgnoreCase(
-                customer.getCustomerLastName())
-                && !currentDB.getCustomerLastName().equalsIgnoreCase(
-                customer.getCustomerLastName())) {
-            currentDB.setCustomerLastName(
-                    customer.getCustomerLastName());
-        }
+//        if (Objects.nonNull(customer.getCustomerFirstName())
+//                && !"".equalsIgnoreCase(
+//                customer.getCustomerFirstName())
+//                && !currentDB.getCustomerFirstName().equalsIgnoreCase(
+//                customer.getCustomerFirstName())) {
+//            currentDB.setCustomerFirstName(
+//                    customer.getCustomerFirstName());
+//        }
+//        if (Objects.nonNull(customer.getCustomerLastName())
+//                && !"".equalsIgnoreCase(
+//                customer.getCustomerLastName())
+//                && !currentDB.getCustomerLastName().equalsIgnoreCase(
+//                customer.getCustomerLastName())) {
+//            currentDB.setCustomerLastName(
+//                    customer.getCustomerLastName());
+//        }
 
         if (Objects.nonNull(customer.getCustomerUserName())
                 && !"".equalsIgnoreCase(
@@ -63,16 +63,16 @@ public class CustomerImpl implements CustomerService{
             currentDB.setCustomerUserName(
                     customer.getCustomerUserName());
         }
-       if( customer.getProdPrefList().size()>0){
+        if (customer.getProdPrefList() !=null) {
+            if (customer.getProdPrefList().size()> 0) {
 
-         customer.getProdPrefList().stream().filter(prodPref ->
-                   currentDB.getProdPrefList().stream().anyMatch(p->prodPref.getPrefId().equals(p.getPrefId())));
-               prodRepository.saveAllAndFlush(customer.getProdPrefList());
-           }
-           else{
-               currentDB.setProdPrefList(customer.getProdPrefList());
-           }
-
+                customer.getProdPrefList().stream().filter(prodPref ->
+                        currentDB.getProdPrefList().stream().anyMatch(p -> prodPref.getPrefId().equals(p.getPrefId())));
+                prodRepository.saveAllAndFlush(customer.getProdPrefList());
+            } else {
+                currentDB.setProdPrefList(customer.getProdPrefList());
+            }
+        }
         return customerRepository.save(currentDB);
     }
 }

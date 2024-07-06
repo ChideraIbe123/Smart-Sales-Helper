@@ -17,8 +17,8 @@ public class ProdPref {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long prefId;
     private Long customerId;
-    private String productId;
-    private String productName;
-    private boolean thumbsUp;
+    private int id;
+    private String title;
+    private boolean status;
 
 }

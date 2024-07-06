@@ -26,22 +26,20 @@ public class ProdPrefImpl implements ProdPrefService{
                 .get();
 
         if (Objects.nonNull(
-                prodPref.getProductId())
-                && !"".equalsIgnoreCase(
-                prodPref.getProductId())) {
-            prodPrefDB.setProductId(
-                    prodPref.getProductId());
+                prodPref.getId())) {
+            prodPrefDB.setId(
+                    prodPref.getId());
         }
-        if (Objects.nonNull(prodPref.getProductName())
+        if (Objects.nonNull(prodPref.getTitle())
                 && !"".equalsIgnoreCase(
-                prodPref.getProductName())) {
-            prodPrefDB.setProductName(
-                    prodPref.getProductName());
+                prodPref.getTitle())) {
+            prodPrefDB.setTitle(
+                    prodPref.getTitle());
         }
-        if (Objects.nonNull(prodPref.isThumbsUp())
-                && !prodPref.isThumbsUp()) {
-            prodPrefDB.setThumbsUp(
-                    prodPref.isThumbsUp());
+        if (Objects.nonNull(prodPref.isStatus())
+                && !prodPref.isStatus()) {
+            prodPrefDB.setStatus(
+                    prodPref.isStatus());
         }
 
         return prodPrefRepository.save(prodPrefDB);

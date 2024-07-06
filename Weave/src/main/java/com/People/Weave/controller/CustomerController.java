@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin(origins = "*")
 @RestController
 public class CustomerController {
 
@@ -15,7 +15,7 @@ public class CustomerController {
     private CustomerService customerService;
 
     // Save operation
-    @PostMapping("/customer")
+    @PostMapping("/customers")
     public Customer saveCustomer(@RequestBody Customer customer) {
         return customerService.saveCustomer(customer);
     }
