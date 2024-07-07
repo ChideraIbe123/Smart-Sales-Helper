@@ -19,6 +19,6 @@ public class ProdPref {
     private Long customerId;
     private int id;
     private String title;
-    private boolean status;
+    private String status;
 
 }

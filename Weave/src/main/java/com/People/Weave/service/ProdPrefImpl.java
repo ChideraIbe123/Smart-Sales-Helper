@@ -36,10 +36,11 @@ public class ProdPrefImpl implements ProdPrefService{
             prodPrefDB.setTitle(
                     prodPref.getTitle());
         }
-        if (Objects.nonNull(prodPref.isStatus())
-                && !prodPref.isStatus()) {
+        if (Objects.nonNull(prodPref.getStatus())
+                && !"".equalsIgnoreCase(
+                prodPref.getStatus())) {
             prodPrefDB.setStatus(
-                    prodPref.isStatus());
+                    prodPref.getStatus());
         }
 
         return prodPrefRepository.save(prodPrefDB);
