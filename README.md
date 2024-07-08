@@ -14,42 +14,45 @@ Our project is designed to enhance customer interactions by providing personaliz
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 npx create-react-app productcartdemo
 
-# Technologies used:
+# Development Tools:
+  ### Visual Studio Code
+  ###  Git and GitHub for version control
+  ### Node.js and npm for package management
+  ###  Webpack for module bundling
 
-- #### **React JS**
-- #### **Redux Toolkit**
-- #### **SASS**
-- #### **
+# APIs Used:
+  ### BART for summarization of conversation  - DummyJSON RestAPI for product data
 
-# Libraries used:
+# Assets Used:
+  ### Audio files in mp3 format
+  ### Product images and descriptions from DummyJSON API
 
-- #### **React JS**
-- #### **Redux Toolkit**
-- #### **SASS**
-- #### **NLTK**
-- #### **FuzzyWuzzy**
-- #### **Llama3**
-- Stuff for other thing
+# Libraries Used:
+  ### React: For building the front end.
+  ### Speech Recognition & pydub: Converting the speech to text
+  ### Bart: For summarizing the transcript of the audio file
+  ### FuzzyWuzzy: For matching conversation words with product titles and descriptions.
+  ### Llama3: A fine-tuned model for refining product suggestions.
+  ### Sentiment Analysis Model: For analyzing the sentiment of the conversation.
+
 
 <br/>
 
 ## Features:
+### Audio Recording and Transcription: 
+   #### Feature: Records audio and converts it into an mp3 format.
+   #### Functionality: Utilizes a transcription service to convert audio to text.
+   
+### Conversation Summarization: 
+   #### Feature: Summarizes the transcribed conversation.
+   #### Functionality: Condenses lengthy conversations into a brief summary for quick understanding.
+   
+### Text Processing:
+   #### Feature: Processes the conversation text to remove frequently used words.
+### Product Suggestion:
+   #### Feature: Provides product suggestions based on the conversation.
+   #### Functionality: Uses the FuzzyWuzzy library to match words from the conversation with product titles and descriptions from a dummy product database. Picks out twenty suggestions and refines them to 3-5 using a fine-tuned Llama3 model.
 
-- #### Audio Recording and Transcription
-  - #### Feature: Records audio and converts it into an mp3 format.
-  - #### Functionality: Utilizes a transcription service to convert audio to text.
-- #### Conversation Summarization
-  - #### Feature: Summarizes the transcribed conversation.
-  - #### Functionality: Condenses lengthy conversations into a brief summary for quick understanding.
-- #### Text Processing
-  - #### Feature: Processes the conversation text to remove frequently used words.
-  - #### Functionality: Splits the conversation into individual words and uses the NLTK library to remove common words like "I," "for," "a," etc.
-- #### Product Suggestion
-  - #### Feature: Provides product suggestions based on the conversation.
-  - #### Functionality: Uses the FuzzyWuzzy library to match words from the conversation with product titles and descriptions from a dummy product database. Picks out twenty suggestions and refines them to 3-5 using a fine-tuned Llama3 model.
-- #### Sentiment Analysis
-  - #### Feature: Analyzes the sentiment of the conversation.
-  - #### Functionality: Determines whether the conversation is positive, neutral, or negative and provides feedback to the UI for the user to understand how they are handling the situation.
 - #### User Interface
   - #### Display List of products from dummy API: https://dummyjson.com/docs.
   - #### Add to Database for user
@@ -67,11 +70,17 @@ npx create-react-app productcartdemo
 
 ## Available Scripts
 
+## Install JDK 17
+
+## Install mySQL
+
 ## "brew install gradle"
 Installs gradle for environment use
 
-## "build gradle"
+## To build "$ gradle build"
 Builds the environment for the app to be hosted on
+
+To run the application gradle run
 
 In the project directory, you can run:
 
