@@ -46,14 +46,14 @@ public class CustomerImpl implements CustomerService{
 //            currentDB.setCustomerFirstName(
 //                    customer.getCustomerFirstName());
 //        }
-//        if (Objects.nonNull(customer.getCustomerLastName())
-//                && !"".equalsIgnoreCase(
-//                customer.getCustomerLastName())
-//                && !currentDB.getCustomerLastName().equalsIgnoreCase(
-//                customer.getCustomerLastName())) {
-//            currentDB.setCustomerLastName(
-//                    customer.getCustomerLastName());
-//        }
+        if (Objects.nonNull(customer.getCustomerInterest())
+                && !"".equalsIgnoreCase(
+                customer.getCustomerInterest())
+                && !currentDB.getCustomerInterest().equalsIgnoreCase(
+                customer.getCustomerInterest())) {
+            currentDB.setCustomerInterest(
+                    customer.getCustomerInterest());
+        }
 
         if (Objects.nonNull(customer.getCustomerUserName())
                 && !"".equalsIgnoreCase(

@@ -22,6 +22,7 @@ public class Customer {
     private String customerFirstName;
     private String customerLastName;
     private String customerUserName;
+    private String customerInterest;
     @OneToMany
     @JoinColumn(name ="customerId")
     private List<ProdPref> prodPrefList;
