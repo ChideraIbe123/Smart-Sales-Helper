@@ -1,4 +1,15 @@
+
+
 # Tik Tok Trend Mapper
+
+# Problem Statement
+
+Customer service representatives often struggle to provide personalized and relevant product recommendations during conversations with customers. This can lead to dissatisfaction and a less engaging customer experience. Our product addresses this challenge by taking in the conversation between the representative and the customer, analyzing it, and providing tailored product recommendations at the click of a button. This ensures that the recommendations are directly relevant to the customer's needs and preferences, improving customer satisfaction and enhancing the overall shopping experience.
+
+
+# Project Description
+Our project is designed to enhance customer interactions by providing personalized product recommendations based on real-time conversations. By leveraging advanced audio transcription, text processing, and sentiment analysis, our tool ensures that customer service representatives can offer relevant and timely product suggestions, improving customer satisfaction and engagement.
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 npx create-react-app productcartdemo
@@ -55,6 +66,12 @@ npx create-react-app productcartdemo
 
 
 ## Available Scripts
+
+## "brew install gradle"
+Installs gradle for environment use
+
+## "build gradle"
+Builds the environment for the app to be hosted on
 
 In the project directory, you can run:
 
