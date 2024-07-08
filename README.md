@@ -15,25 +15,25 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 npx create-react-app productcartdemo
 
 # Development Tools:
-  ## Visual Studio Code
-  ##  Git and GitHub for version control
-  ## Node.js and npm for package management
-  ##  Webpack for module bundling
+  #### Visual Studio Code
+  ####  Git and GitHub for version control
+  #### Node.js and npm for package management
+  ####  Webpack for module bundling
 
 # APIs Used:
-  ## BART for summarization of conversation  - DummyJSON RestAPI for product data
+  #### BART for summarization of conversation  - DummyJSON RestAPI for product data
 
 # Assets Used:
-  ## Audio files in mp3 format
-  ## Product images and descriptions from DummyJSON API
+  #### Audio files in mp3 format
+  #### Product images and descriptions from DummyJSON API
 
 # Libraries Used:
-  ## React: For building the front end.
-  ## Speech Recognition & pydub: Converting the speech to text
-  ## Bart: For summarizing the transcript of the audio file
-  ## FuzzyWuzzy: For matching conversation words with product titles and descriptions.
-  ## Llama3: A fine-tuned model for refining product suggestions.
-  ## Sentiment Analysis Model: For analyzing the sentiment of the conversation.
+  #### React: For building the front end.
+  #### Speech Recognition & pydub: Converting the speech to text
+  #### Bart: For summarizing the transcript of the audio file
+  #### FuzzyWuzzy: For matching conversation words with product titles and descriptions.
+  #### Llama3: A fine-tuned model for refining product suggestions.
+  #### Sentiment Analysis Model: For analyzing the sentiment of the conversation.
 
 
 <br/>
